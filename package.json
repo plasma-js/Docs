@@ -1,6 +1,6 @@
 {
   "name": "Docs",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "Stack for Plasma static documentation",
   "repository": "git@github.com:plasma-js/Docs.git",
   "author": "João Julio <joaopjt@gmail.com>",
