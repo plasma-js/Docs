@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html class="no-js" lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>PlasmaJS{% if title %} - {{ title }}{% endif %}</title>
+    <meta name="description" content="Lorem description">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="format-detection" content="telephone=no">
+    
+    <link rel="stylesheet" href="assets/css/main.css">
+  </head>
+  <body>
+    <header>
+      <ul class="sidenav sidenav-fixed">
+        <li id="logo">
+          <img src="{{ config.image_src }}rick.png" alt="Plasma" title="Plasma">
+        </li>
+        {% for page in pages %}
+          {% if page.submenu %}
+            <li class="submenu">
+              <ul class="collapsible collapsible-accordion">
+                <li class="bold">
+                  <a class="collapsible-header waves-effect waves-teal">{{ page.title }}</a>
+                  <div class="collapsible-body">
+                    <ul>
+                      {% for item in page.submenu %}
+                        <li><a href="{{ page.filename }}/{{ item.filename }}.html">{{ item.title }}</a></li>
+                      {% endfor %}
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </li>
+          {% else %}
+            <li><a href="{{ page.filename }}.html">{{ page.title }}</a></li>
+          {% endif %}
+        {% endfor %}
+      </ul>
+    </header>
+    <main id="app">
+      <div>
+        {% if title %}
+          <section class="page-header">
+            <h2 class="header">{{ title }}</h2>
+          </section>
+        {% endif %}
+
+        {% block content %}
+        {% endblock %}
+      </div>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,10 @@
+.page-header {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.14);
+  margin-left: -15px;
+  padding: 0 15px;
+  width: calc(100% + 30px);
+
+  > h2 {
+    color: $theme-color;
+  }
+}

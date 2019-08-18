@@ -1,0 +1,22 @@
+ul.sidenav.sidenav-fixed {
+  li#logo {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.14);
+    line-height: 0;
+    padding: 50px 15px;
+    text-align: center;
+    width: 100%;
+  }
+
+  li#logo img {
+    max-height: 100px;
+  }
+
+  li > a {
+    padding: 0 32px !important;
+  }
+
+  .collapsible-body a {
+    font-weight: normal;
+    padding-left: 40px !important;
+  }
+}
