@@ -1,8 +1,8 @@
 {
   "name": "Docs",
   "version": "1.0.0",
-  "description": "Plasma.js documentation",
-  "repository": "git@github.com:plasma-js/docs.git",
+  "description": "Stack for Plasma static documentation",
+  "repository": "git@github.com:plasma-js/Docs.git",
   "author": "João Julio <joaopjt@gmail.com>",
   "license": "MIT",
   "scripts": {
